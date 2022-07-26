@@ -11,5 +11,4 @@ class Meal
   def to_csv_row
     [id, name, price]
   end
-
 end

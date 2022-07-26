@@ -4,7 +4,7 @@ class BaseRepository
   def initialize(csv_file)
     @csv_file = csv_file
     @elements = []
-    load_csv if File.exists?(@csv_file)
+    load_csv if File.exist?(@csv_file)
     @next_id = @elements.empty? ? 1 : @elements.last.id + 1
   end
 
